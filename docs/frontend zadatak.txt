@@ -1,7 +1,10 @@
 
 Na temelju dva dostavljena grafička predloška na kojima se nalazi prikaz proizvoda (knjiga) u "list" i "grid" načinu, potrebno je izraditi odgovarajući HTML i CSS kod.
 
-Prikaz oba načina (grid i list) treba realizirati koristeći identičan HTML. Klik na gumb u gornjem desnom kutu (grid/list ikona) uz pomoć javascripte treba promijeniti css klasu kojom se određuje odabrani stil prikaza, a nalazi se na div elementu unutar kojeg se prikazuju knjige.
+Prikaz oba načina (grid i list) treba realizirati koristeći identičan HTML.
+Klik na gumb u gornjem desnom kutu (grid/list ikona) uz pomoć javascripte treba 
+promijeniti css klasu kojom se određuje odabrani stil prikaza,
+a nalazi se na div elementu unutar kojeg se prikazuju knjige.
 
 
 - stranica mora biti responzivna (adaptacija dizajna prilikom skaliranja stranice na manje veličine zaslona je vaš izbor)
