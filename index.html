@@ -10,14 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="typography.css" />
 
+    <script type="text/javascript" src="randomBookAPI.js"></script>
     <title>Netgen frontend zadatak</title>
   </head>
   <body>
-    <div class="page-header"><span class="page-title">Books</span> <i>G</i></div>
+    <div class="page-header">
+      <span class="page-title">Books</span>
+      <span class="button material-icons" onclick="flipView(this)">view_comfy</span>
+    </div>
     <hr />
 
     <div class="container container-list-view">
@@ -42,9 +49,14 @@
           </div>
           <div class="author">L. Frank Baum</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">16</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>16</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -57,9 +69,14 @@
           </div>
           <div class="author">Herman Melville</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">28</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>28</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -70,9 +87,14 @@
           </div>
           <div class="author">H. G. Wells</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">19</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>19</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -84,9 +106,14 @@
           </div>
           <div class="author">Edgar Rice Burroughs</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">8</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>8</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -98,9 +125,14 @@
           </div>
           <div class="author">Edgar Rice Burroughs</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">11</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>11</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -111,9 +143,14 @@
           </div>
           <div class="author">Lewis Carroll</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">21</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>21</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -125,9 +162,14 @@
           </div>
           <div class="author">Jack London</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">13</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>13</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
       <div class="book">
         <div class="text">
@@ -141,9 +183,14 @@
           </div>
           <div class="author">Jules Verne</div>
         </div>
-        <div class="image">xyz</div>
-        <div class="stars">18</div>
-        <div class="options">ooo</div>
+        <div class="image">
+          <img
+            src="bookcover.jpg"
+            onload="this.onload=null; this.src=randomBookCover();"
+          />
+        </div>
+        <div class="stars"><span class="material-icons"> star </span>18</div>
+        <div class="options"><span class="button material-icons"> more_horiz </span></div>
       </div>
     </div>
   </body>

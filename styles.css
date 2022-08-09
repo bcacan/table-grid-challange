@@ -1,3 +1,9 @@
+body {
+  background-color: rgb(220, 220, 220);
+}
+.container > :not(:first-child) {
+  background-color: white;
+}
 .page-header {
   display: flex;
   flex-direction: row;
@@ -20,7 +26,7 @@
 
 .container-grid-view > .book {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.35fr 1fr;
   grid-template-rows: 1fr auto;
   gap: 0px 0px;
   justify-content: start;
@@ -31,7 +37,6 @@
   /* grid-area: book; */
 
   border: 1px solid grey;
-  padding: 0.4em;
 }
 
 .container-list-view > .book {
@@ -121,15 +126,27 @@
   grid-area: author;
 }
 
-.stars {
-  justify-self: start;
-  align-self: center;
+/* Footer stuff */
+.container-grid-view > .book > .stars {
+  justify-self: stretch;
+  align-self: stretch;
   grid-area: stars;
+
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  background-color: #b3e9ef;
+
+  padding: 0 0.6em;
 }
 .container-list-view > .book > .stars {
   justify-self: center;
   align-self: center;
   grid-area: stars;
+
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
 }
 
 .options {
@@ -137,14 +154,50 @@
   align-self: center;
   grid-area: options;
 }
+.container-grid-view > .book > .options {
+  background-color: #b3e9ef;
+  text-align: end;
+  justify-self: stretch;
 
-.image {
-  justify-self: center;
-  align-self: start;
-  grid-area: image;
+  padding: 0 0.4em;
 }
+
+/* IMAGE DIV */
+
+.image > img {
+  display: block;
+  margin: 0 auto;
+}
+.container-grid-view > .book > .image {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: image;
+
+  background-color: #d1f5f0;
+  padding: 0.4em;
+}
+
 .container-list-view > .book > .image {
   justify-self: center;
-  align-self: center;
+  align-self: stretch;
   grid-area: image;
+}
+
+/*  */
+/*  */
+.button {
+  cursor: pointer;
+  padding: 0.2em;
+}
+.container-list-view > .book > .header {
+  align-self: center;
+  color: #000;
+}
+
+.book.list-header > .text > .header {
+  color: #000;
+}
+
+.material-icons {
+  font-size: 150%;
 }
