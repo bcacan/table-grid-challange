@@ -21,7 +21,7 @@
 .container-grid-view > .book {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr 0.2fr;
+  grid-template-rows: 1fr auto;
   gap: 0px 0px;
   justify-content: start;
   align-content: start;
@@ -51,11 +51,11 @@
   display: none;
 }
 
-.container-grid-view > .text {
+.container-grid-view > .book > .text {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content min-content;
-  gap: 0px 0px;
+  gap: 0.75em;
   grid-auto-flow: row;
   grid-template-areas:
     "title"
@@ -66,7 +66,7 @@
 
 .container-list-view > .book > .text {
   display: grid;
-  grid-template-columns: 0.5fr 0.8fr 0.5fr;
+  grid-template-columns: 0.5fr 0.8fr 0.4fr;
   grid-auto-rows: auto;
   gap: 0px 2em;
   grid-auto-flow: column;
@@ -112,6 +112,8 @@
   justify-self: end;
   align-self: center;
   grid-area: author;
+
+  text-align: end;
 }
 .author {
   justify-self: start;
