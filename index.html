@@ -21,176 +21,197 @@
     <title>Netgen frontend zadatak</title>
   </head>
   <body>
-    <div class="page-header">
-      <span class="page-title">Books</span>
-      <span class="button material-icons" onclick="flipView(this)">view_comfy</span>
-    </div>
-    <hr />
-
-    <div class="container container-list-view">
-      <div class="book list-header">
-        <div class="text">
-          <div class="title header">Title</div>
-          <div class="quote header">Quote</div>
-          <div class="author header">Author</div>
-        </div>
-        <div class="image header">Cover</div>
-        <div class="stars header">Likes</div>
-        <div class="options header"></div>
+    <div class="page-container">
+      <div class="page-header">
+        <span class="page-title">Books</span>
+        <span class="change-view button material-icons" onclick="flipView(this)"
+          >view_comfy</span
+        >
       </div>
 
-      <div class="book">
-        <div class="text">
-          <div class="title">The Wizard of Oz</div>
-          <div class="quote">
-            Dorothy found herself riding easily between two of the biggest Monkeys, one of
-            them the King himself. They had made a chair of their hands and were careful
-            not to hurt her. “Why do you have to obey the charm of the Golden Cap?”
+      <div class="container container-list-view">
+        <div class="book list-header">
+          <div class="text">
+            <div class="title header">Title</div>
+            <div class="quote header">Quote</div>
+            <div class="author header">Author</div>
           </div>
-          <div class="author">L. Frank Baum</div>
+          <div class="image header">Cover</div>
+          <div class="stars header">Likes</div>
+          <div class="options header"></div>
         </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>16</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">Mobi Dick</div>
-          <div class="quote">
-            Round the world! There is much in that sound to inspire proud feelings; but
-            whereto does all that circumnavigation conduct? Only through numberless perils
-            to the very point whence we started, where those that we left behind secure,
-            were all the time before us.
+
+        <div class="book">
+          <div class="text">
+            <div class="title">The Wizard of Oz</div>
+            <div class="quote">
+              Dorothy found herself riding easily between two of the biggest Monkeys, one
+              of them the King himself. They had made a chair of their hands and were
+              careful not to hurt her. “Why do you have to obey the charm of the Golden
+              Cap?”
+            </div>
+            <div class="author">L. Frank Baum</div>
           </div>
-          <div class="author">Herman Melville</div>
-        </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>28</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">The War of the Worlds</div>
-          <div class="quote">
-            “What news from the common? | said. "People seem fair silly about the common,"
-            said the woman over the gate.
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
           </div>
-          <div class="author">H. G. Wells</div>
-        </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>19</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">At the Earth's Core</div>
-          <div class="quote">
-            I wondered why these agile creatures required connecting bridges between the
-            trees, but later when | saw the motley aggregation of half-savage beasts which
-            they kept within their village | realized the necessity for the pathways.
+          <div class="stars"><span class="material-icons"> star </span>16</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
           </div>
-          <div class="author">Edgar Rice Burroughs</div>
         </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>8</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">A Princess of Mars</div>
-          <div class="quote">
-            | drew rein on a little level promontory overlooking the trail below and to my
-            left, and saw the party of pursuing savages disappearing around the point of a
-            neighboring peak.
+        <div class="book">
+          <div class="text">
+            <div class="title">Mobi Dick</div>
+            <div class="quote">
+              Round the world! There is much in that sound to inspire proud feelings; but
+              whereto does all that circumnavigation conduct? Only through numberless
+              perils to the very point whence we started, where those that we left behind
+              secure, were all the time before us.
+            </div>
+            <div class="author">Herman Melville</div>
           </div>
-          <div class="author">Edgar Rice Burroughs</div>
-        </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>11</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">Alice in Wonderland</div>
-          <div class="quote">
-            The Hatter shook his head mournfully. ‘Not I! he replied. ‘We quarrelled last
-            March—just before HE went mad, you know
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
           </div>
-          <div class="author">Lewis Carroll</div>
-        </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>21</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">The Scarlet Plague</div>
-          <div class="quote">
-            It was at this point that Hare- Lip rose to his feet, an expression of huge
-            contempt on his face. "Granser” he announced, "you make me sick with your
-            gabble.
+          <div class="stars"><span class="material-icons"> star </span>28</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
           </div>
-          <div class="author">Jack London</div>
         </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
-        </div>
-        <div class="stars"><span class="material-icons"> star </span>13</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
-      </div>
-      <div class="book">
-        <div class="text">
-          <div class="title">Around the World in 80 Days</div>
-          <div class="quote">
-            Nothing could be more simple. Indeed, it was all so simple that Fix and
-            Passepartout felt their hearts beating as if they would crack. They were
-            listening for the whistle agreed upon, when suddenly savage cries tesounded in
-            the air, accompanied by reports which certainly did not issue from the car
-            where the duellists were.
+        <div class="book">
+          <div class="text">
+            <div class="title">The War of the Worlds</div>
+            <div class="quote">
+              “What news from the common? | said. "People seem fair silly about the
+              common," said the woman over the gate.
+            </div>
+            <div class="author">H. G. Wells</div>
           </div>
-          <div class="author">Jules Verne</div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>19</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
         </div>
-        <div class="image">
-          <img
-            src="bookcover.jpg"
-            onload="this.onload=null; this.src=randomBookCover();"
-          />
+        <div class="book">
+          <div class="text">
+            <div class="title">At the Earth's Core</div>
+            <div class="quote">
+              I wondered why these agile creatures required connecting bridges between the
+              trees, but later when | saw the motley aggregation of half-savage beasts
+              which they kept within their village | realized the necessity for the
+              pathways.
+            </div>
+            <div class="author">Edgar Rice Burroughs</div>
+          </div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>8</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
         </div>
-        <div class="stars"><span class="material-icons"> star </span>18</div>
-        <div class="options"><span class="button material-icons"> more_horiz </span></div>
+        <div class="book">
+          <div class="text">
+            <div class="title">A Princess of Mars</div>
+            <div class="quote">
+              | drew rein on a little level promontory overlooking the trail below and to
+              my left, and saw the party of pursuing savages disappearing around the point
+              of a neighboring peak.
+            </div>
+            <div class="author">Edgar Rice Burroughs</div>
+          </div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>11</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="text">
+            <div class="title">Alice in Wonderland</div>
+            <div class="quote">
+              The Hatter shook his head mournfully. ‘Not I! he replied. ‘We quarrelled
+              last March—just before HE went mad, you know
+            </div>
+            <div class="author">Lewis Carroll</div>
+          </div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>21</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="text">
+            <div class="title">The Scarlet Plague</div>
+            <div class="quote">
+              It was at this point that Hare- Lip rose to his feet, an expression of huge
+              contempt on his face. "Granser” he announced, "you make me sick with your
+              gabble.
+            </div>
+            <div class="author">Jack London</div>
+          </div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>13</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
+        </div>
+        <div class="book">
+          <div class="text">
+            <div class="title">Around the World in 80 Days</div>
+            <div class="quote">
+              Nothing could be more simple. Indeed, it was all so simple that Fix and
+              Passepartout felt their hearts beating as if they would crack. They were
+              listening for the whistle agreed upon, when suddenly savage cries tesounded
+              in the air, accompanied by reports which certainly did not issue from the
+              car where the duellists were.
+            </div>
+            <div class="author">Jules Verne</div>
+          </div>
+          <div class="image">
+            <img
+              src="bookcover.jpg"
+              onload="this.onload=null; this.src=randomBookCover();"
+            />
+          </div>
+          <div class="stars"><span class="material-icons"> star </span>18</div>
+          <div class="options">
+            <span class="button material-icons"> more_horiz </span>
+          </div>
+        </div>
       </div>
     </div>
   </body>

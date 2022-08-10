@@ -1,7 +1,9 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-
+.page-container {
+  padding: 0 5%;
+}
 .page-title {
   font-size: 1.3125rem;
 }
@@ -15,14 +17,18 @@ html {
   line-height: 160%;
   color: rgb(100, 100, 100);
 }
+
 .book > .text > .author {
   font-size: 0.6875rem;
+  color: var(--color-grey-light);
+}
+.container-grid-view .author {
+  font-weight: 400;
+}
+.container-list-view .author {
   font-weight: 500;
-  color: rgb(100, 100, 100);
 }
-.container-grid-view .text > .author {
-  color: rgb(150, 150, 150);
-}
+
 .book > .stars {
   font-size: 0.75rem;
   font-weight: 500;
