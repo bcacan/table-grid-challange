@@ -1,0 +1,1 @@
+- add 1linelayout for footer with creadits

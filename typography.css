@@ -1,9 +1,7 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-.page-container {
-  padding: 0 5%;
-}
+
 .page-title {
   font-size: 1.3125rem;
 }
@@ -35,15 +33,19 @@ html {
 }
 
 /*  */
-
-.book > .options > .item {
-  font-size: 0.8125rem;
-}
-.book > .options > .note {
-  font-size: 0.5625rem;
-}
-
 .book.list-header .header {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+.dropdown-menu .options-item {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+.dropdown-menu .options-note {
+  color: var(--color-grey-light);
+  font-size: 0.5625rem;
+  font-weight: 300;
 }

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="typography.css" />
 
-    <script type="text/javascript" src="randomBookAPI.js"></script>
+    <script type="text/javascript" src="displayFunctions.js" defer></script>
     <title>Netgen frontend zadatak</title>
   </head>
   <body>
@@ -58,14 +58,13 @@
             <div class="author">L. Frank Baum</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>16</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
         <div class="book">
@@ -80,14 +79,13 @@
             <div class="author">Herman Melville</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>28</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
         <div class="book">
@@ -100,14 +98,13 @@
             <div class="author">H. G. Wells</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>19</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
         <div class="book">
@@ -122,14 +119,13 @@
             <div class="author">Edgar Rice Burroughs</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>8</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
         <div class="book">
@@ -143,16 +139,16 @@
             <div class="author">Edgar Rice Burroughs</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>11</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
+
         <div class="book">
           <div class="text">
             <div class="title">Alice in Wonderland</div>
@@ -163,16 +159,16 @@
             <div class="author">Lewis Carroll</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>21</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
+
         <div class="book">
           <div class="text">
             <div class="title">The Scarlet Plague</div>
@@ -184,14 +180,13 @@
             <div class="author">Jack London</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>13</div>
           <div class="options">
-            <span class="button material-icons"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
         <div class="book">
@@ -207,16 +202,24 @@
             <div class="author">Jules Verne</div>
           </div>
           <div class="image">
-            <img
-              src="bookcover.jpg"
-              onload="this.onload=null; this.src=randomBookCover();"
-            />
+            <img src="bookcover.jpg" />
           </div>
           <div class="stars"><span class="material-icons"> star </span>18</div>
           <div class="options">
-            <span class="button material-icons" onclick="menuFun()"> more_horiz </span>
+            <button onclick="toggleMenu(event)" class="menu-button button material-icons">
+              more_horiz
+            </button>
           </div>
         </div>
+      </div>
+      <div class="dropdown-menu">
+        <a href="#" class="options-item">Edit book details</a>
+        <a href="#" class="options-item">Duplicate book</a>
+        <a href="#" class="options-item">Move book</a>
+        <a href="#" class="options-item">
+          Delete book
+          <div class="options-note">Delete the book permanently</div>
+        </a>
       </div>
     </div>
   </body>
