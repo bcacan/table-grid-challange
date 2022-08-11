@@ -8,7 +8,15 @@ window.onclick = function (event) {
     }
   }
 };
+window.onload = function () {
+  let menuButtons = document.querySelectorAll(".menu-button");
+  for (let i = 0; i < menuButtons.length; i++) {
+    menuButtons[i].addEventListener("click", toggleMenu);
+  }
 
+  let viewButton = document.querySelector(".change-view");
+  viewButton.addEventListener("click", flipView);
+};
 /* Show the menu if not shown and position it */
 function toggleMenu(e) {
   let menuDiv = document.querySelector(".dropdown-menu");
@@ -36,7 +44,8 @@ function toggleMenu(e) {
 }
 
 /* Flip between grid and list view */
-function flipView(elButton) {
+function flipView(event) {
+  let elButton = event.currentTarget;
   let list = "view_list";
   let grid = "view_comfy";
   if (elButton.innerText === list) {

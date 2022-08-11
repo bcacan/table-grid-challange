@@ -29,13 +29,17 @@ html {
 
 .book > .stars {
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+.book > .stars > .material-icons {
+  font-size: 1.3rem;
 }
 
 /*  */
 .book.list-header .header {
   font-size: 0.8rem;
   font-weight: 400;
+  padding: 0.2em;
 }
 
 .dropdown-menu .options-item {
