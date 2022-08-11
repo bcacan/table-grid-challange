@@ -5,6 +5,8 @@ html {
 .page-title {
   font-size: 1.3125rem;
 }
+
+/* Book text (title, quote, author) */
 .book > .text > .title {
   font-size: 0.875rem;
   font-weight: 700;
@@ -15,7 +17,6 @@ html {
   line-height: 160%;
   color: rgb(100, 100, 100);
 }
-
 .book > .text > .author {
   font-size: 0.6875rem;
   color: var(--color-grey-light);
@@ -27,6 +28,14 @@ html {
   font-weight: 500;
 }
 
+/* List table header text */
+.book.list-header .header {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.2em;
+}
+
+/* Book stars text */
 .book > .stars {
   font-size: 0.75rem;
   font-weight: 400;
@@ -34,14 +43,7 @@ html {
 .book > .stars > .material-icons {
   font-size: 1.3rem;
 }
-
-/*  */
-.book.list-header .header {
-  font-size: 0.8rem;
-  font-weight: 400;
-  padding: 0.2em;
-}
-
+/* Options menu text */
 .dropdown-menu .options-item {
   color: var(--color-white);
   text-decoration: none;

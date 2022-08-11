@@ -1,5 +1,3 @@
-- add 1linelayout for footer with creadits
-
 # Zadatak
 
 > Na temelju dva dostavljena grafička predloška na kojima se nalazi prikaz proizvoda (knjiga) u "list" i "grid" načinu, potrebno je izraditi odgovarajući HTML i CSS kod.
